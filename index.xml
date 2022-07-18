@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>https://lknowing.github.io/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Jul 2022 21:19:01 +0800</lastBuildDate><atom:link href="https://lknowing.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java程序编译运行常见问题</title>
+      <link>https://lknowing.github.io/post/blog/</link>
+      <pubDate>Mon, 18 Jul 2022 21:19:01 +0800</pubDate>
+      
+      <guid>https://lknowing.github.io/post/blog/</guid>
+      <description>Java程序编译运行常见问题 一、编译问题 Windows 系统上的常见错误消息
+&amp;#39;javac&amp;#39; 不是内部或外部命令，也不是可运行的程序或批处理文件 如果收到此错误，Windows 找不到编译器 (javac)
+这是告诉 Windows 在哪里可以找到 javac 的一种方法。假设您在 C:\jdk1.8.0 中安装了 JDK。在提示符下，您将键入以下命令并按 Enter：
+C:\jdk1.8.0\bin\javac HelloWorldApp.java 如果选择此选项，则每次编译或运行程序时都必须在 javac 和 java 命令之前使用 C:\jdk1.8.0\bin\。为避免这种额外的输入，需要配置JDK环境变量。
+类名称“HelloWorldApp”仅在明确请求注释处理时才被接受 如果您收到此错误，则您在编译程序时忘记包含 .java 后缀。请记住，命令是 javac HelloWorldApp.java 而不是 javac HelloWorldApp
+语法错误
+如果您错误输入程序的一部分，编译器可能会发出语法错误。该消息通常显示错误的类型、检测到错误的行号、该行上的代码以及错误在代码中的位置。这是由于在语句末尾省略分号 (;) 导致的错误：
+Testing.java:8: error: &amp;#39;;&amp;#39; expected count++ ^ 1 error 如果您看到任何编译器错误，那么您的程序没有成功编译，并且编译器没有创建 .class 文件。仔细验证程序，修复您检测到的任何错误，然后重试
+语义错误
+除了验证您的程序在语法上是否正确之外，编译器还会检查其他基本正确性。例如，每次使用未初始化的变量时，编译器都会警告您：
+Testing.java:8: error: variable count might not have been initialized count++; ^ Testing.java:9: error: variable count might not have been initialized System.</description>
+    </item>
+    
+  </channel>
+</rss>
